@@ -1,0 +1,34 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px;">
+          
+          <a href="/about/" style="text-decoration: none;color: grey;">About</a> |
+          <a href="/contact/" style="text-decoration: none;color: grey;">Contact</a> |
+          <a href="/privacypolicy/" style="text-decoration: none;color: grey;">Privacy Policy</a> |
+          <a href="/termsandconditions/" style="text-decoration: none;color: grey;">Terms and Conditions</a>
+          
+        </p>
+      {%- if site.author %}
+        <ul class="contact-list">
+         
+        
+        </ul>
+      {%- endif %}
+      </div>
+      <div class="footer-col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px;">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>

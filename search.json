@@ -1,0 +1,15 @@
+---
+---
+[
+    {% for tag in site.tags %}
+    {
+
+     
+      "tags"     : "#{{ tag | first }}",
+      "url"      : "/t/{{ tag | first  | downcase | replace: ' ', '-' }}"
+      
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+
